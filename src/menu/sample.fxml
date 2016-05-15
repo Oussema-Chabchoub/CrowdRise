@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.Controller">
+   <left>
+      <VBox fx:id="menuRoot" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="13.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="title" prefHeight="25.0" prefWidth="130.0" text="CrowdRise" textAlignment="CENTER">
+                     <font>
+                        <Font name="Apple Braille" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="menuButton" fitHeight="63.0" fitWidth="138.0" onMouseClicked="#setOnMenuClick" pickOnBounds="true" preserveRatio="true">
+                     <cursor>
+                       
+                     </cursor>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fx:id="portrait" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#profileSelected" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <cursor>
+                       
+                     </cursor>
+                  </ImageView>
+                  <Label fx:id="User" alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="108.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="35.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Separator fx:id="sep_1" prefWidth="200.0" />
+            <HBox onMouseClicked="#setOnBrowserClicked" prefHeight="48.0" prefWidth="190.0">
+               <children>
+                  <ImageView fx:id="browserImage" fitHeight="35.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Region />
+                  <Label text="Home">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <cursor>
+                 
+               </cursor>
+            </HBox>
+            <Separator fx:id="sep_7" prefWidth="200.0" />
+            <HBox prefHeight="48.0" prefWidth="190.0">
+               <children>
+                  <ImageView fx:id="settings" fitHeight="30.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Region />
+                  <Label onMouseClicked="#ProjectClikAction" text="My Projects">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <cursor>
+                 
+               </cursor>
+            </HBox>
+            <Separator fx:id="sep_2" prefWidth="200.0" />
+            <HBox prefHeight="48.0" prefWidth="190.0">
+               <children>
+                  <ImageView fx:id="streams" fitHeight="30.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Region />
+                  <Label onMouseClicked="#ProblemClikAction" text="My ideas">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <cursor>
+               
+               </cursor>
+            </HBox>
+            <Separator fx:id="sep_3" prefWidth="200.0" />
+            <HBox prefHeight="48.0" prefWidth="190.0">
+               <children>
+                  <ImageView fx:id="favorites" fitHeight="30.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Region />
+                  <Label onMouseClicked="#AllmembersClikAction" text="Members">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <cursor>
+                 
+               </cursor>
+            </HBox>
+            <Separator fx:id="sep_4" prefWidth="200.0" />
+            <HBox prefHeight="48.0" prefWidth="190.0">
+               <children>
+                  <ImageView fx:id="share" fitHeight="30.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Region />
+                  <Label onMouseClicked="#AllProjectsClikAction" text="All projects">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <cursor>
+              
+               </cursor>
+            </HBox>
+            <Separator fx:id="sep_5" prefWidth="200.0" />
+            <HBox prefHeight="48.0" prefWidth="190.0">
+               <children>
+                  <ImageView fx:id="search" fitHeight="30.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Region />
+                  <Label onMouseClicked="#AllProblemsClikAction" text="All ideas">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <cursor>
+                
+               </cursor>
+            </HBox>
+            <Separator fx:id="sep_6" prefWidth="200.0" />
+            <HBox prefHeight="48.0" prefWidth="190.0">
+               <children>
+                  <ImageView fx:id="about" fitHeight="30.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Region />
+                  <Label onMouseClicked="#StatisticsClikAction" text="Statistics">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <cursor>
+                
+               </cursor>
+            </HBox>
+            <Separator fx:id="sep_8" prefWidth="200.0" />
+            <HBox onMouseClicked="#logoutSelected" prefHeight="48.0" prefWidth="190.0">
+               <children>
+                  <ImageView fx:id="logOut" fitHeight="30.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Region />
+                  <Label text="Logout">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <cursor>
+                 
+               </cursor>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <StackPane fx:id="stackPane" prefHeight="542.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane fx:id="AnshorPrincipalr" prefHeight="200.0" prefWidth="200.0" />
+         </children></StackPane>
+        
+   </center>
+</BorderPane>

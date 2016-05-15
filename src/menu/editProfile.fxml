@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="553.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.EditProfileController">
+   <children>
+      <ImageView fitHeight="49.0" fitWidth="71.0" layoutX="216.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/Edit_user.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="276.0" layoutY="21.0" prefHeight="36.0" prefWidth="237.0" text="Edit your profile">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextField id="Image" fx:id="Image" layoutX="232.0" layoutY="416.0" prefHeight="25.0" prefWidth="231.0" promptText="image" text="Picture's URL" />
+      <TextField id="NumTel" fx:id="NumTel" layoutX="232.0" layoutY="377.0" prefHeight="25.0" prefWidth="231.0" promptText="NumTel" text="Cell phone" />
+      <TextField id="Rib" fx:id="Rib" layoutX="232.0" layoutY="336.0" prefHeight="25.0" prefWidth="231.0" promptText="Rib" />
+      <TextField id="Competence" fx:id="Competence" layoutX="232.0" layoutY="296.0" prefHeight="25.0" prefWidth="231.0" promptText="Competence" text="Skills" />
+      <TextField id="Prenom" fx:id="Prenom" layoutX="232.0" layoutY="137.0" prefHeight="25.0" prefWidth="231.0" promptText="Prenom" text="Surname" />
+      <TextField id="Nom" fx:id="Nom" layoutX="232.0" layoutY="99.0" prefHeight="25.0" prefWidth="231.0" promptText="Nom" text="Name" />
+      <TextField id="Mail" fx:id="Mail" layoutX="232.0" layoutY="175.0" prefHeight="25.0" prefWidth="231.0" promptText="Mail" />
+      <TextField id="Mail" fx:id="password" layoutX="232.0" layoutY="252.0" prefHeight="25.0" prefWidth="231.0" promptText="Mail" text="Password" />
+      <TextField id="Pseudo" fx:id="Pseudo" layoutX="232.0" layoutY="214.0" prefHeight="25.0" prefWidth="231.0" promptText="Pseudo" text="Username" />
+      <Button layoutX="350.0" layoutY="476.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Reset" />
+      <Button layoutX="250.0" layoutY="476.0" mnemonicParsing="false" onAction="#UpdateMember" text="update" />
+   </children>
+</AnchorPane>

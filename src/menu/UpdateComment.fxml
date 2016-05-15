@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.UpdateCommentController">
+   <children>
+      <ImageView fitHeight="68.0" fitWidth="71.0" layoutX="128.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@22to_do_icone5.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="214.0" layoutY="38.0" prefHeight="35.0" prefWidth="292.0" text="Update your comment">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="contenuCommentaire" layoutX="128.0" layoutY="112.0" prefHeight="162.0" prefWidth="372.0" />
+      <Button fx:id="update" layoutX="214.0" layoutY="299.0" mnemonicParsing="false" onAction="#ModifierCommentaire" prefHeight="35.0" prefWidth="85.0" text="Update" />
+      <Button layoutX="329.0" layoutY="299.0" mnemonicParsing="false" onAction="#clearButton" prefHeight="35.0" prefWidth="77.0" text="Clear" />
+   </children>
+</AnchorPane>

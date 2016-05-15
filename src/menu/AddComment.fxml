@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="308.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.AddCommentController">
+   <children>
+      <Label layoutX="202.0" layoutY="25.0" prefHeight="35.0" prefWidth="292.0" text="Post your comment">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="contenuCommentaire" layoutX="100.0" layoutY="86.0" prefHeight="144.0" prefWidth="416.0" promptText="Type your comment" />
+      <Button fx:id="ajouterCommentaire" layoutX="243.0" layoutY="245.0" mnemonicParsing="false" onAction="#ajouterCommentaire" prefHeight="35.0" prefWidth="114.0" text="Post">
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@comments-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="56.0" fitWidth="57.0" layoutX="139.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@comments-icon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

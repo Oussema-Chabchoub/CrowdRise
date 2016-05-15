@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="AnshorPrincipalr" prefHeight="897.0" prefWidth="1165.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.MembersController">
+   <children>
+      <TableView fx:id="tblViewMembers" layoutX="14.0" layoutY="173.0" prefHeight="300.0" prefWidth="778.0">
+         <columns>
+            <TableColumn fx:id="name" prefWidth="227.0" text="Name" />
+            <TableColumn fx:id="surname" prefWidth="284.0" text="Surname" />
+            <TableColumn fx:id="email" minWidth="0.0" prefWidth="0.0" text="E-mail" />
+            <TableColumn fx:id="tel" prefWidth="170.0" text="Cell phone" />
+            <TableColumn fx:id="rib" prefWidth="96.0" text="RIB" />
+         </columns>
+      </TableView>
+      <TextField fx:id="rechercher" layoutX="14.0" layoutY="112.0" onKeyPressed="#searchMemberAction" prefHeight="35.0" prefWidth="254.0" promptText="Search by typing the member's username" />
+      <Separator layoutX="801.0" layoutY="77.0" orientation="VERTICAL" prefHeight="820.0" prefWidth="5.0" />
+      <ImageView fitHeight="17.0" fitWidth="25.0" layoutX="268.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Search-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Picture" fitHeight="175.0" fitWidth="262.0" layoutX="830.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="864.0" layoutY="298.0" prefHeight="25.0" prefWidth="74.0" text="Skills" textFill="#252525">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="skills" layoutX="938.0" layoutY="298.0" prefHeight="25.0" prefWidth="194.0" textFill="#06115e">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="864.0" layoutY="368.0" prefHeight="0.0" prefWidth="52.0" text="Credit" textFill="#252525">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="credit" layoutX="938.0" layoutY="363.0" prefHeight="35.0" prefWidth="200.0" textFill="#06115e">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="realisation_project" layoutX="949.0" layoutY="448.0" prefHeight="25.0" prefWidth="106.0" textFill="#06115e">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="editProfile" fitHeight="46.0" fitWidth="35.0" layoutX="1048.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/Edit_user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="56.0" layoutX="1098.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/boy-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="86.0" fitWidth="92.0" layoutX="22.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/members.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="121.0" layoutY="33.0" text="List of members" textFill="#252525">
+         <font>
+            <Font name="Bodoni MT" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="853.0" layoutY="425.0" prefHeight="25.0" prefWidth="74.0" text="E-mail:" textFill="#252525">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="email1" layoutX="930.0" layoutY="425.0" prefHeight="25.0" prefWidth="229.0" textFill="#06115e">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="820.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/coin-money-6.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="820.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/3273_-_Brainstorming-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="35.0" layoutX="817.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/email-icon-vector-27630.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

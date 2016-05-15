@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.FinanceController">
+   <children>
+      <Slider fx:id="slider" layoutX="145.0" layoutY="211.0" />
+      <Label layoutX="184.0" layoutY="14.0" prefHeight="35.0" prefWidth="292.0" text="Finance this project">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="finance" fitHeight="56.0" fitWidth="56.0" layoutX="128.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/dollar.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="141.0" text="Realisation :" textFill="#252525">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="175.0" text="Budget :" textFill="#252525">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="342.0" layoutY="326.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="117.0" text="Cancel" />
+      <Button fx:id="finance1" layoutX="203.0" layoutY="326.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="117.0" text="Finance">
+         <graphic>
+            
+           
+         </graphic>
+      </Button>
+      <Label layoutX="14.0" layoutY="213.0" text="Participation:" textFill="#252525">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="realisation" layoutX="133.0" layoutY="141.0" prefHeight="25.0" prefWidth="140.0" textFill="#252525">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="budget" layoutX="94.0" layoutY="175.0" prefHeight="25.0" prefWidth="140.0" textFill="#252525">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="somme" layoutX="306.0" layoutY="218.0" prefHeight="17.0" prefWidth="45.0" text="0" />
+      <Label layoutX="423.0" layoutY="274.0" text="Your Credit :  " />
+      <Label fx:id="credit" layoutX="496.0" layoutY="274.0" text="Label" />
+   </children>
+</AnchorPane>

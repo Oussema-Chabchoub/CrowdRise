@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="AnshorPrincipalr" prefHeight="800.0" prefWidth="1018.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.AllProblemsController">
+   <children>
+      <TableView fx:id="tblViewProbleme" layoutX="7.0" layoutY="136.0" prefHeight="320.0" prefWidth="655.0">
+         <columns>
+            <TableColumn fx:id="postedBy" prefWidth="164.0" text="Posted by" />
+            <TableColumn fx:id="titlePb" prefWidth="131.0" text="Title" />
+            <TableColumn fx:id="domainPb" prefWidth="167.0" text="Application domain" />
+            <TableColumn fx:id="profilPb" prefWidth="192.0" text="Asked profile" />
+            
+         </columns>
+      </TableView>
+      <TextField fx:id="rechercherPb" layoutX="7.0" layoutY="81.0" onKeyPressed="#searchProblemAction" prefHeight="25.0" prefWidth="282.0" promptText="search by typing the idea's title" />
+      <ImageView fitHeight="17.0" fitWidth="25.0" layoutX="260.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Search-50.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="71.0" layoutY="35.0" prefHeight="35.0" prefWidth="292.0" text="View all posted ideas">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Separator layoutX="709.0" layoutY="121.0" orientation="VERTICAL" prefHeight="670.0" prefWidth="0.0" />
+      <ImageView fx:id="imgP" fitHeight="175.0" fitWidth="262.0" layoutX="743.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="description_problem" layoutX="720.0" layoutY="403.0" prefHeight="88.0" prefWidth="383.0" textFill="#06115e">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="717.0" layoutY="378.0" text="Description:" textFill="#252525">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="title_problem" layoutX="768.0" layoutY="332.0" prefHeight="25.0" prefWidth="217.0" textFill="#06115e">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="722.0" layoutY="332.0" text="Title:" textFill="#252525">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="add_button_solution" fitHeight="50.0" fitWidth="62.0" layoutX="720.0" layoutY="561.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/solve1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="795.0" layoutY="569.0" prefHeight="35.0" prefWidth="292.0" text="Sovle the selected idea">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="refresh" layoutX="307.0" layoutY="79.0" mnemonicParsing="false" onAction="#refreshButton" onMouseClicked="#refreshButton" prefHeight="25.0" prefWidth="97.0" text="Refresh">
+         <graphic>
+            <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Restart-52.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="35.0" fitWidth="56.0" layoutX="1108.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/boy-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="editProfile" fitHeight="46.0" fitWidth="35.0" layoutX="1058.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/Edit_user.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblViewSolutions" layoutX="11.0" layoutY="516.0" prefHeight="200.0" prefWidth="655.0">
+         <columns>
+            <TableColumn fx:id="PostedByS" prefWidth="134.0" text="Posted by" />
+            <TableColumn fx:id="ContentS" prefWidth="174.0" text="Content" />
+            <TableColumn fx:id="Rate" prefWidth="183.0" text="Rate" />
+            <TableColumn fx:id="updateSolution" prefWidth="183.0" text="Edit" />
+         </columns>
+      </TableView>
+      <ImageView fx:id="add_button_prob1" fitHeight="41.0" fitWidth="35.0" layoutX="23.0" layoutY="474.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/solve1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="71.0" layoutY="474.0" prefHeight="35.0" prefWidth="217.0" text="Solutions">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="AnshorPrincipalr" prefHeight="703.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.AllProjectsController">
+   <children>
+      <TableView fx:id="tblViewProjet" layoutX="21.0" layoutY="101.0" prefHeight="300.0" prefWidth="778.0">
+         <columns>
+            <TableColumn fx:id="postedBy" prefWidth="137.0" text="Posted by" />
+            <TableColumn fx:id="titre" prefWidth="75.0" text="Title" />
+            <TableColumn fx:id="domaine" prefWidth="131.0" text="Application domain" />
+            <TableColumn fx:id="budget" prefWidth="131.0" text="Budget" />
+            <TableColumn fx:id="realisation" prefWidth="131.0" text="Realisation" />
+            <TableColumn fx:id="AddComment" prefWidth="172.0" text="Add comment" />
+         </columns>
+      </TableView>
+      <TextField fx:id="rechercher" layoutX="27.0" layoutY="50.0" onKeyPressed="#searchProjetAction" prefHeight="25.0" prefWidth="254.0" promptText="Search by typing the project's title" />
+      <Separator layoutX="801.0" layoutY="77.0" orientation="VERTICAL" prefHeight="820.0" prefWidth="5.0" />
+      <Label layoutX="103.0" layoutY="430.0" prefHeight="35.0" prefWidth="217.0" text="List of comments">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="56.0" fitWidth="57.0" layoutX="27.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@comments-icon.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblViewComments" layoutX="27.0" layoutY="477.0" prefHeight="200.0" prefWidth="585.0">
+         <columns>
+            <TableColumn minWidth="0.0" prefWidth="0.0" text="C1" />
+            <TableColumn fx:id="proprietaireComment" prefWidth="150.0" text="Posted by" />
+            <TableColumn fx:id="ContenuComment" prefWidth="434.0" text="Content" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="17.0" fitWidth="25.0" layoutX="246.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Search-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img1" fitHeight="175.0" fitWidth="262.0" layoutX="830.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="830.0" layoutY="285.0" text="Title:" textFill="#252525">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="title_project" layoutX="881.0" layoutY="285.0" prefHeight="25.0" prefWidth="217.0" textFill="#06115e">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="830.0" layoutY="331.0" text="Description:" textFill="#252525">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="description_project" layoutX="828.0" layoutY="368.0" prefHeight="66.0" prefWidth="311.0" textFill="#06115e">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="realisation_project" layoutX="949.0" layoutY="448.0" prefHeight="25.0" prefWidth="106.0" textFill="#06115e">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="828.0" layoutY="448.0" text="Realisation :" textFill="#252525">
+         <font>
+            <Font name="Bodoni MT" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="finance" fitHeight="56.0" fitWidth="56.0" layoutX="802.0" layoutY="587.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/dollar.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="refresh" layoutX="307.0" layoutY="50.0" mnemonicParsing="false" onAction="#refreshButton" prefHeight="25.0" prefWidth="97.0" text="Refresh" />
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="312.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Restart-52.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="864.0" layoutY="597.0" prefHeight="35.0" prefWidth="275.0" text="Finance the selected project">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="editProfile" fitHeight="46.0" fitWidth="35.0" layoutX="1048.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/Edit_user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="56.0" layoutX="1098.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/boy-512.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

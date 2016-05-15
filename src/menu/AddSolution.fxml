@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="308.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.AddSolutionController">
+   <children>
+      <Label layoutX="202.0" layoutY="25.0" prefHeight="35.0" prefWidth="292.0" text="Post your Solution">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="contenuSolution" layoutX="100.0" layoutY="86.0" prefHeight="144.0" prefWidth="416.0" promptText="Type your  solution" />
+      <Button fx:id="ajouterSolution" layoutX="264.0" layoutY="245.0" mnemonicParsing="false" onAction="#ajouterSolution" prefHeight="35.0" prefWidth="93.0" text="Post">
+         <graphic>
+            <ImageView fx:id="add_button_prob11" fitHeight="23.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../buttons/solve1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fx:id="add_button_prob1" fitHeight="41.0" fitWidth="35.0" layoutX="148.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/solve1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
